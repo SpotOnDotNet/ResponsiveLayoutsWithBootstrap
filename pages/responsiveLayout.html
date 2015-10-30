@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="bootstrapDemo">
+    <meta name="author" content="pasz">
+
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <script src="/js/jquery-1.11.3.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Responsywny layout</h1>
+        </div>
+
+        <h2>
+            Elementy responsywnego layoutu
+        </h2>
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Kontener
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <h2>Rodzaje kontenerów:</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">o stałej szerokości <code>.container</code></li>
+                            <li class="list-group-item">o zmiennej szerokości <code>.container-fluid</code></li>
+                        </ul>
+                        <h3>Kontener o stałej szerokości</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Strona nie zajmuje całej szerokości okna przeglądarki, posiada puste miejsca po bokach.</h4>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <h4>Bootstrap oferuje klasę <code>.container</code>, która tworzy nam kontener o danej szerokości i automatycznie ustawia po lewej i prawej stronie marginesy by zawartość zawsze była wycentrowana.</h4>
+                            </div>
+
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <caption>Szerokości kontenerów w zależności od rozmiaru okna przeglądarki</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Rodzaj urządzenia</th>
+                                        <th>
+                                            <span>E</span>xtra <span>S</span>mall
+                                            <small>telefony (&lt;768px)</small>
+                                        </th>
+                                        <th>
+                                            <span>Sm</span>all
+                                            <small>tablety (&ge;768px)</small>
+                                        </th>
+                                        <th>
+                                            <span>M</span>e<span>d</span>ium
+                                            <small>netbooki (&ge;992px)</small>
+
+                                        </th>
+                                        <th>
+                                            <span>L</span>ar<span>g</span>e
+                                            <small>monitory i laptopy (&ge;1200px)</small>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr>
+                                        <th>
+                                            Szerokość kontenera
+                                        </th>
+                                        <td>auto</td>
+                                        <td>750px</td>
+                                        <td>970px</td>
+                                        <td>1170px</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Kontener o zmiennej szerokości</h3>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Strona zajmuje całej szerokości okna przeglądarki, nie posiada pustych miejsc po bokach.</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Kontener tworzymy klasą <code>.container-fluid</code></h4>
+
+                            </div>
+
+                        </div>
+                        <div class="alert alert-danger" role="alert"><strong>Uwaga:</strong> Nie należy zagnieżdżać kontenerów.</div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Wiersz
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+
+                        <h4>Wiersze <code>.row</code> stosuje się w celu stworzenia poziomych grup na stronie.</h4>
+
+                        <ul>
+                            <li>
+                                Wiersz wyrównuje przepływ treści umieszonej w kolumnach do normalnej treści.
+                            </li>
+                            <li>
+                                Wiersz zapobiega sumowaniu się paddingów podczas zagnieżdżania kolumn.
+                            </li>
+                        </ul>
+
+                        <p>
+                            <strong>Działanie:</strong> usuwa lewy padding z pierwszej kolumny i prawy padding z ostatniej kolumny.
+
+                        </p>
+                        <div class="alert alert-danger" role="alert"><strong>Uwaga:</strong> Wiersze dla poprawnego działania muszą być umieszczone w kontenerze.</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Kolumna
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <h4>Kolumny <code>.col-*-*</code> pozwalają na pionowy podział wiersza <code>.row</code>.</h4>
+                        <ul>
+                            <li>Wewnątrz wiersza możemy umieścić 12 kolumn.</li>
+                            <li>Możemy dowolnie ustalać szerokość kolumn. Łączna szerokość kolumn powinna sumować się do 12.</li>
+                        </ul>
+
+                        <h5>Przykładowe konfiguracje:</h5>
+                        <div class="grid-demo">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    .col-*-12
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    .col-*-6
+
+                                </div>
+                                <div class="col-xs-6">
+                                    .col-*-6
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    .col-*-2
+
+                                </div>
+                                <div class="col-xs-6">
+                                    .col-*-6
+
+                                </div>
+                                <div class="col-xs-4">
+                                    .col-*-4
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    .col-*-1
+
+                                </div>
+                                <div class="col-xs-1">
+                                    .col-*-1
+
+                                </div>
+                                <div class="col-xs-1">
+                                    .col-*-1
+
+                                </div>
+                                <div class="col-xs-2">
+                                    .col-*-2
+
+                                </div>
+                                <div class="col-xs-7">
+                                    .col-*-7
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <h4>Dla każdego z 4 rodzajów rozdzielczości możemy zdefiniować <strong>inną szerokość kolumny</strong>:</h4>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Rodzaj urządzenia</th>
+                                        <th>
+                                            <span>E</span>xtra <span>S</span>mall
+                                            <small>telefony (&lt;768px)</small>
+                                        </th>
+                                        <th>
+                                            <span>Sm</span>all
+                                            <small>tablety (&ge;768px)</small>
+                                        </th>
+                                        <th>
+                                            <span>M</span>e<span>d</span>ium
+                                            <small>netbooki (&ge;992px)</small>
+
+                                        </th>
+                                        <th>
+                                            <span>L</span>ar<span>g</span>e
+                                            <small>monitory i laptopy (&ge;1200px)</small>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Szerokość kontenera
+                                        </th>
+                                        <td>auto</td>
+                                        <td>750px</td>
+                                        <td>970px</td>
+                                        <td>1170px</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Klasa css
+                                        </th>
+                                        <td><code>.col-<span>xs</span>-*</code></td>
+                                        <td><code>.col-<span>sm</span>-*</code></td>
+                                        <td><code>.col-<span>md</span>-*</code></td>
+                                        <td><code>.col-<span>lg</span>-*</code></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Uwaga:</strong>
+                            <ul>
+                                <li>Tylko kolumna powinna zawierać treść.</li>
+                                <li>Tylko w kolumnie zagnieżdżamy kolejny wiersz <code>.row</code>.</li>
+                                <li>Zawartość sąsiednich kolumn jest oddalona od siebie o 30px (po 15px z każdej strony).</li>
+                                <li>Jeśli przekroczymy sumę 12 kolumn w wierszu, to każda kolejna niemieszcząca się kolumna przejdzie do następnej linii.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <hr />
+            <a href="/pages/index.html" class="btn btn-primary btn-lg" role="button">Menu</a>
+            <hr />
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+

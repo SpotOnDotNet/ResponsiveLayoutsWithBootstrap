@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="bootstrapDemo">
+    <meta name="author" content="pasz">
+
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <script src="/js/jquery-1.11.3.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>ClearFix - resetowanie float i kolumn</h1>
+        </div>
+        <h4>
+            Klasa pomocnicza <code>.clearfix</code> pozwala na wyczyszczenie wartości <code>float</code>.
+        </h4>
+        <p>
+            Z klasy <code>.clearfix</code> korzystamy również jeśli w wierszu mamy kolumny o <strong>różnej wysokości</strong> oraz ich układ wymusza <strong>zawijanie do nowej linii</strong>.
+        </p>
+        <p>
+            W takiej sytuacji korzystamy z <code>.clearfix</code> łącznie z klasą <code>visible-*</code> lub <code>hidden-*</code>.
+        </p>
+        <div class="well well-lg">
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary active" data-toggle="button" aria-pressed="true" autocomplete="off" onclick="toggleClearFix()">
+                    ClearFix
+                </button>
+            </div>
+        </div>
+
+
+        <div class="grid-demo">
+            <div class="row">
+                <div class="col-xs-6 col-lg-3">.col-xs-6 .col-lg-3<br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae quam eu nunc gravida interdum a eu dolor. Sed non erat quam. Nulla consequat dui ante, at efficitur odio viverra a. Phasellus viverra faucibus nunc sed dapibus. Nunc ultricies vitae lorem eget egestas. In mattis varius rhoncus. Quisque nec euilgod ex, cursus aliquet eros.</div>
+                <div class="col-xs-6 col-lg-3">.col-xs-6 .col-lg-3</div>
+
+                <div id="clearfix" class="clearfix hidden-lg"></div>
+
+                <div class="col-xs-6 col-lg-3">.col-xs-6 .col-lg-3</div>
+                <div class="col-xs-6 col-lg-3">.col-xs-6 .col-lg-3</div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <hr />
+            <a href="/pages/index.html" class="btn btn-primary btn-lg" role="button">Menu</a>
+            <hr />
+        </div>
+    </div>
+
+    <script>
+                var toggleClearFix = function () {
+                    $("#clearfix").toggleClass("clearfix");
+                }
+    </script>
+</body>
+</html>
+
+

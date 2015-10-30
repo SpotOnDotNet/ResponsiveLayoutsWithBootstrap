@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="bootstrapDemo">
+    <meta name="author" content="pasz">
+
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <script src="/js/jquery-1.11.3.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Offsety kolumn</h1>
+        </div>
+        <h4>
+            Kolumnę możemy przesunąć w prawo przy pomocy klasy <code>.col-*-offset-*</code>.
+        </h4>
+        <p>
+            Nie musimy do tego celu dodawać pustych kolumn.
+        </p>
+        <p>
+            Dla przykładu <code>.col-md-offset-4</code> przesunie <code>.col-md-4</code> o 4 kolumny w prawo.
+        </p>
+        <p>
+            Offsety można stosować do wszystkich rodzajów kolumn: <code>.col-lg-offset-*</code> <code>.col-md-offset-*</code> <code>.col-sm-offset-*</code> <code>.col-xs-offset-*</code>
+        </p>
+
+        <div class="grid-demo">
+
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+            </div>
+
+
+            <h4>Zerowanie offsetu</h4>
+            <p>
+                Offesty podobnie jak kolumny działają na ekran o szerokości równej lub większej niż punkt przełamania.
+            </p>
+
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 col-lg-2 col-md-offset-4 col-lg-offset-0">.col-md-4 .col-md-offset-4 .col-lg-2 .col-lg-offset-0</div>
+            </div>
+
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+            <strong>Uwaga:</strong>
+            <ul>
+                <li>Klasa <code>.col-*-offset-*</code> może przyjmować wartości od 0 do 11.</li>
+                <li>Suma kolumn + offsetów musi wynosić 12.</li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <hr />
+            <a href="/pages/index.html" class="btn btn-primary btn-lg" role="button">Menu</a>
+            <hr />
+        </div>
+
+    </div>
+</body>
+</html>
+
+

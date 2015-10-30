@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="bootstrapDemo">
+    <meta name="author" content="pasz">
+
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <script src="/js/jquery-1.11.3.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Zagnieżdżanie kolumn</h1>
+        </div>
+        <h4>
+            W każdej kolumnie możemy zagnieździć wiersz <code>.row</code> a w nim kolejny układ kolumn <code>.col-*-*</code>.
+        </h4>
+
+        <div class="grid-demo">
+
+            <div class="row">
+                <div class="col-sm-9">
+                    Level 1: .col-sm-9
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-6">
+                            Level 2: .col-xs-8 .col-sm-6
+                        </div>
+                        <div class="col-xs-4 col-sm-6">
+                            Level 2: .col-xs-4 .col-sm-6
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+            <strong>Uwaga:</strong>
+            <ul>
+                <li>Podczas zagnieżdżania kolumn należy pamiętać o utworzenie nowego wiersza <code>.row</code>.</li>
+                <li>W zagnieżdżonym wierszu mamy do dyspozycji kolejne 12 kolumn.</li>
+            </ul>
+        </div>
+        <hr />
+
+        <h4>
+            Efekt braku nowego wiersza <code>.row</code> dla zagnieżdżonych kolumn.
+        </h4>
+
+        <div class="grid-demo">
+            <div class="row">
+                <div class="col-sm-9">
+                    Level 1: .col-sm-9
+                    <div class="">
+                        <div class="col-xs-8 col-sm-6">
+                            Level 2: .col-xs-8 .col-sm-6
+                        </div>
+                        <div class="col-xs-4 col-sm-6">
+                            Level 2: .col-xs-4 .col-sm-6
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <hr />
+            <a href="/pages/index.html" class="btn btn-primary btn-lg" role="button">Menu</a>
+            <hr />
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,79 @@
+﻿.grid-demo .row {
+    margin-bottom: 20px;
+}
+
+    .grid-demo .row .row {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+.grid-demo [class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+.show-grid [class*="col-"] {
+    background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+table span {
+    color: red;
+    font-weight: bold;
+}
+
+table th small {
+    display: block;
+    color: #999;
+}
+
+table td.is-visible {
+    color: #468847;
+    background-color: #dff0d8 !important;
+}
+
+table td.is-hidden {
+    color: #ccc;
+    background-color: #f9f9f9 !important;
+}
+
+.phone-centered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: 397px;
+    background-image: url(../content/mockup/smartfon-mockup.png);
+    background-repeat: no-repeat;
+    height: 720px;
+    position: relative;
+}
+
+.smartfon {
+    height: 480px;
+    width: 336px;
+    position: relative;
+    top: 60px;
+    left: 15px;
+}
+
+.navigation {
+    padding: 15px 0;
+}
+
+.agenda {
+    font-size: 2em;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+}

@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="bootstrapDemo">
+    <meta name="author" content="pasz">
+
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+
+    <script src="/js/jquery-1.11.3.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="page-header">
+            <h1>Podstawy układu kolumnowego</h1>
+        </div>
+
+        <div class="well well-lg">
+            <div class="btn-group btn-group-lg" data-toggle="buttons">
+                <label class="btn btn-primary active" onclick="fluidOff()">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Container
+                </label>
+                <label class="btn btn-primary" onclick="fluidOn()">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Container fluid
+                </label>
+            </div>
+        </div>
+
+        <div class="grid-demo">
+
+            <h2>col-lg-*</h2>
+            <div>
+                <div class="row">
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                    <div class="col-lg-1">1</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">col-lg-8</div>
+                    <div class="col-lg-4">col-lg-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">col-lg-4</div>
+                    <div class="col-lg-4">col-lg-4</div>
+                    <div class="col-lg-4">col-lg-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">col-lg-6</div>
+                    <div class="col-lg-6">col-lg-6</div>
+                </div>
+
+            </div>
+
+            <h2>col-md-*</h2>
+            <div>
+                <div class="row">
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                    <div class="col-md-1">1</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">col-md-8</div>
+                    <div class="col-md-4">col-md-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">col-md-4</div>
+                    <div class="col-md-4">col-md-4</div>
+                    <div class="col-md-4">col-md-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">col-md-6</div>
+                    <div class="col-md-6">col-md-6</div>
+                </div>
+            </div>
+
+            <div class="alert alert-danger" role="alert">
+                <strong>Uwaga:</strong>
+                <p>Klasy kolumn <code>.col-*-*</code> działają na ekran o szerokości równej lub większej niż punkt przełamania.</p>
+
+                <p>Przykładowo gdy nie zastosujemy w kolumnie klasy <code>col-lg-*</code> a jedynie <code>col-md-*</code>, to będzie ona działała również dla rozdzielczości >1200px.</p>
+                <p>Dzięki temu nie musimy za każdym razem dodawać 2 klas do kolumny, wystarczy klasa <code>col-md-*</code>, która obsłuży rozdzielczości >=992px i >1200px</p>
+
+            </div>
+
+            <h2>col-sm-*</h2>
+            <div>
+                <div class="row">
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                    <div class="col-sm-1">1</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">col-sm-8</div>
+                    <div class="col-sm-4">col-sm-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">col-sm-4</div>
+                    <div class="col-sm-4">col-sm-4</div>
+                    <div class="col-sm-4">col-sm-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">col-sm-6</div>
+                    <div class="col-sm-6">col-sm-6</div>
+                </div>
+            </div>
+
+            <h2>col-xs-*</h2>
+            <div>
+                <div class="row">
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                    <div class="col-xs-1">1</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">col-xs-8</div>
+                    <div class="col-xs-4">col-xs-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">col-xs-4</div>
+                    <div class="col-xs-4">col-xs-4</div>
+                    <div class="col-xs-4">col-xs-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">col-xs-6</div>
+                    <div class="col-xs-6">col-xs-6</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <hr />
+            <a href="/pages/index.html" class="btn btn-primary btn-lg" role="button">Menu</a>
+            <hr />
+        </div>
+    </div>
+
+    <script>
+        var fluidOff = function () {
+            $("#container").attr('class', 'container');
+        }
+
+        var fluidOn = function () {
+            $("#container").attr('class', 'container-fluid');
+        }
+    </script>
+</body>
+</html>
+
+

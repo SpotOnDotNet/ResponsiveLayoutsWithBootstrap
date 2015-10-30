@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="bootstrapDemo">
+    <meta name="author" content="pasz">
+
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <script src="/js/jquery-1.11.3.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Wyświetlanie i ukrywanie treści</h1>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped responsive-utilities">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <span>E</span>xtra <span>S</span>mall
+                            <small>telefony (&lt;768px)</small>
+                        </th>
+                        <th>
+                            <span>Sm</span>all
+                            <small>tablety (&ge;768px)</small>
+                        </th>
+                        <th>
+                            <span>M</span>e<span>d</span>ium
+                            <small>netbooki (&ge;992px)</small>
+
+                        </th>
+                        <th>
+                            <span>L</span>ar<span>g</span>e
+                            <small>monitory i laptopy (&ge;1200px)</small>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><code>.visible-xs-*</code></th>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-hidden">Hidden</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.visible-sm-*</code></th>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-hidden">Hidden</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.visible-md-*</code></th>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-hidden">Hidden</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.visible-lg-*</code></th>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-visible">Visible</td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <th scope="row"><code>.hidden-xs</code></th>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-visible">Visible</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.hidden-sm</code></th>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-visible">Visible</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.hidden-md</code></th>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-hidden">Hidden</td>
+                        <td class="is-visible">Visible</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.hidden-lg</code></th>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-visible">Visible</td>
+                        <td class="is-hidden">Hidden</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+            <strong>Uwaga:</strong>
+            <p>Elementy <strong>inline</strong> po zastosowaniu klasy pomocniczej <code>.visible-*-*</code> stają się elementami <strong>blokowymi</strong>.</p>
+            <p>Dopiero Bootstrap od wersji 3.2.0 oferuje dodatkowe klasy pomocnicze do wyświetlania i ukrywania treści.</p>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Klasa pomocnicza</th>
+                            <th>CSS <code>display</code></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><code>.visible-*-block</code></th>
+                            <td><code>display: block;</code></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>.visible-*-inline</code></th>
+                            <td><code>display: inline;</code></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>.visible-*-inline-block</code></th>
+                            <td><code>display: inline-block;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+        <div id="footer">
+            <hr />
+            <a href="/pages/index.html" class="btn btn-primary btn-lg" role="button">Menu</a>
+            <hr />
+        </div>
+    </div>
+</body>
+</html>
+
+
